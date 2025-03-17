@@ -9,32 +9,46 @@
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"></li>
-                <li><a href = "index.html">Skip to Main Content</a></li>
-            </ul>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <nav aria-label="Site Branding">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         </nav>
-       
-        <nav>
+
+        <nav aria-label="Main Navigation">
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "tutoring.html">Tutoring</a></li>
-                <li><a href = "advising.html">Advising Resources</a></li>
-                <li><a href = "study_spaces.html">Study Spaces</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutoring.html">Tutoring</a></li>
+                <li><a href="advising.html">Advising Resources</a></li>
+                <li><a href="study_spaces.html" class="active">Study Spaces</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>Study Spaces</h1>
+    <main id="main" aria-labelledby="page-title">
+        <h1 id="page-title">Study Spaces</h1>
 
+        <section>
+            <h2>Find a Quiet Place to Study</h2>
+            <p>UMSI provides various study spaces tailored for collaboration and independent work.</p>
+        </section>
+
+        <section class="grid-container">
+            <article class="grid-item">
+                <h3>Angell Hall Courtyard (Fishbowl)</h3>
+                <p>Central Campus MASON HALL 436 S. State St G440</p>
+                <p><a href="https://sites.its.umich.edu/node/3224">More Information</a></p>
+            </article>
+            <article class="grid-item">
+                <h3>Shapiro Library</h3>
+                <p>919 S. University Ave, Ann Arbor, MI 48109-1185</p>
+                <p><a href="https://www.lib.umich.edu/locations-and-hours/shapiro-library">More Information</a></p>
+            </article>
+        </section>
     </main>
 
-    <footer>
-
+    <footer aria-label="Website Footer">
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
     </footer>
 
-    
 </body>
 </html>
