@@ -9,32 +9,44 @@
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"></li>
-                <li><a href = "index.html">Skip to Main Content</a></li>
-            </ul>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <nav aria-label="Site Branding">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         </nav>
-       
-        <nav>
+
+        <nav aria-label="Main Navigation">
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "tutoring.html">Tutoring</a></li>
-                <li><a href = "advising.html">Advising Resources</a></li>
-                <li><a href = "study_spaces.html">Study Spaces</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutoring.html" class="active">Tutoring</a></li>
+                <li><a href="advising.html">Advising Resources</a></li>
+                <li><a href="study_spaces.html">Study Spaces</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>Tutoring Resources</h1>
+    <main id="main" aria-labelledby="page-title">
+        <h1 id="page-title">Tutoring Resources</h1>
 
+        <section>
+            <h2>Find the Right Tutoring Support</h2>
+            <p>Explore various tutoring options available at UMSI to help you succeed academically.</p>
+        </section>
+
+        <section class="grid-container">
+            <article class="grid-item">
+                <h3>Writing Center</h3>
+                <p>Get help with writing assignments, thesis projects, and research papers.</p>
+            </article>
+            <article class="grid-item">
+                <h3>Math & Stats Tutoring</h3>
+                <p>Access tutoring support for quantitative subjects such as statistics and data science.</p>
+            </article>
+        </section>
     </main>
 
-    <footer>
-
+    <footer aria-label="Website Footer">
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
     </footer>
 
-    
 </body>
 </html>
