@@ -4,36 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>MSI Academic Advising Website</title>
+    <title>Advising Resources</title>
 </head>
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"></li>
-                <li><a href = "index.html">Skip to Main Content</a></li>
-            </ul>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <nav aria-label="Site Branding">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         </nav>
-       
-        <nav>
+
+        <nav aria-label="Main Navigation">
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "tutoring.html">Tutoring</a></li>
-                <li><a href = "advising.html">Advising Resources</a></li>
-                <li><a href = "study_spaces.html">Study Spaces</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutoring.html">Tutoring</a></li>
+                <li><a href="advising.html" class="active">Advising Resources</a></li>
+                <li><a href="study_spaces.html">Study Spaces</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>MSI Academic Advising Website</h1>
+    <main id="main" aria-labelledby="page-title">
+        <h1 id="page-title">Advising Resources</h1>
+
+        <section>
+            <h2>Academic Advising at UMSI</h2>
+            <p>Meet with advisors to plan your coursework, discuss career goals, and get support.</p>
+        </section>
+
+        <section class="grid-container">
+            <article class="grid-item">
+                <h3>General Advising</h3>
+                <p>Schedule one-on-one meetings with academic advisors to discuss your program.</p>
+            </article>
+            <article class="grid-item">
+                <h3>Career Counseling</h3>
+                <p>Explore career opportunities and receive guidance on internships and job searches.</p>
+            </article>
+        </section>
     </main>
 
-    <footer>
-
+    <footer aria-label="Website Footer">
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
     </footer>
 
-    
 </body>
 </html>
