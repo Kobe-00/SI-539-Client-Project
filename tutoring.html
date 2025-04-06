@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Tutoring Resources</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tutoring Resources</title>
 </head>
 <body>
+  <header>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+    <div class="site-branding">
+      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+    </div>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutoring.html" class="active">Tutoring</a></li>
+        <li><a href="advising.html">Advising Resources</a></li>
+        <li><a href="study_spaces.html">Study Spaces</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <a href="#main" class="skip-link">Skip to Main Content</a>
-        <nav aria-label="Site Branding">
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        </nav>
+  <main id="main" aria-labelledby="page-title">
+    <h1 id="page-title">Tutoring Resources</h1>
 
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tutoring.html" class="active">Tutoring</a></li>
-                <li><a href="advising.html">Advising Resources</a></li>
-                <li><a href="study_spaces.html">Study Spaces</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section>
+      <h2>Find the Right Tutoring Support</h2>
+      <p>Explore various tutoring options available at UMSI to help you succeed academically.</p>
+    </section>
 
-    <main id="main" aria-labelledby="page-title">
-        <h1 id="page-title">Tutoring Resources</h1>
+    <section class="grid-container">
+      <article class="grid-item">
+        <h3>Writing Center</h3>
+        <p>Get help with writing assignments, thesis projects, and research papers.</p>
+      </article>
 
-        <section>
-            <h2>Find the Right Tutoring Support</h2>
-            <p>Explore various tutoring options available at UMSI to help you succeed academically.</p>
-        </section>
+      <article class="grid-item">
+        <h3>Math & Stats Tutoring</h3>
+        <p>Access tutoring support for quantitative subjects such as statistics and data science.</p>
+      </article>
 
-        <section class="grid-container">
-            <article class="grid-item">
-                <h3>Writing Center</h3>
-                <p>Get help with writing assignments, thesis projects, and research papers.</p>
-            </article>
-            <article class="grid-item">
-                <h3>Math & Stats Tutoring</h3>
-                <p>Access tutoring support for quantitative subjects such as statistics and data science.</p>
-            </article>
-        </section>
-    </main>
+      <article class="grid-item">
+        <h3>Peer Tutoring Programs</h3>
+        <p>Join group sessions hosted by fellow students trained to assist in challenging courses.</p>
+      </article>
 
-    <footer aria-label="Website Footer">
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
-    </footer>
+      <article class="grid-item">
+        <h3>TA Office Hours</h3>
+        <p>Connect with teaching assistants during scheduled hours for additional course help and clarification.</p>
+      </article>
+    </section>
+  </main>
 
+  <footer aria-label="Website Footer">
+    <p>MSI Academic Advising | 
+      <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">
+        UMSI Academic Advising
+      </a>
+    </p>
+  </footer>
 </body>
 </html>
