@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Study Spaces</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Study Spaces</title>
 </head>
 <body>
+  <header>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+    <div class="site-branding">
+      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+    </div>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutoring.html">Tutoring</a></li>
+        <li><a href="advising.html">Advising Resources</a></li>
+        <li><a href="study_spaces.html" class="active">Study Spaces</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <a href="#main" class="skip-link">Skip to Main Content</a>
-        <nav aria-label="Site Branding">
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        </nav>
+  <main id="main" aria-labelledby="page-title">
+    <h1 id="page-title">Study Spaces</h1>
 
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tutoring.html">Tutoring</a></li>
-                <li><a href="advising.html">Advising Resources</a></li>
-                <li><a href="study_spaces.html" class="active">Study Spaces</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section>
+      <h2>Find a Quiet Place to Study</h2>
+      <p>UMSI provides various study spaces tailored for collaboration, focus, and productivity.</p>
+    </section>
 
-    <main id="main" aria-labelledby="page-title">
-        <h1 id="page-title">Study Spaces</h1>
+    <section class="grid-container">
+      <article class="grid-item">
+        <h3>Angell Hall Courtyard (Fishbowl)</h3>
+        <p>Central Campus - MASON HALL 436 S. State St G440</p>
+        <p><a href="https://sites.its.umich.edu/node/3224">More Information</a></p>
+      </article>
 
-        <section>
-            <h2>Find a Quiet Place to Study</h2>
-            <p>UMSI provides various study spaces tailored for collaboration and independent work.</p>
-        </section>
+      <article class="grid-item">
+        <h3>Shapiro Library</h3>
+        <p>919 S. University Ave, Ann Arbor, MI 48109-1185</p>
+        <p><a href="https://www.lib.umich.edu/locations-and-hours/shapiro-library">More Information</a></p>
+      </article>
 
-        <section class="grid-container">
-            <article class="grid-item">
-                <h3>Angell Hall Courtyard (Fishbowl)</h3>
-                <p>Central Campus MASON HALL 436 S. State St G440</p>
-                <p><a href="https://sites.its.umich.edu/node/3224">More Information</a></p>
-            </article>
-            <article class="grid-item">
-                <h3>Shapiro Library</h3>
-                <p>919 S. University Ave, Ann Arbor, MI 48109-1185</p>
-                <p><a href="https://www.lib.umich.edu/locations-and-hours/shapiro-library">More Information</a></p>
-            </article>
-        </section>
-    </main>
+      <article class="grid-item">
+        <h3>Duderstadt Center</h3>
+        <p>North Campus tech & art hub. Late hours and study rooms for collaboration.</p>
+        <p><a href="https://www.dc.umich.edu/">More Information</a></p>
+      </article>
 
-    <footer aria-label="Website Footer">
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
-    </footer>
+      <article class="grid-item">
+        <h3>Hatcher Graduate Library</h3>
+        <p>Quiet and spacious environment for deep focus with reservable study rooms.</p>
+        <p><a href="https://www.lib.umich.edu/locations-and-hours/hatcher-graduate-library">More Information</a></p>
+      </article>
+    </section>
+  </main>
 
+  <footer aria-label="Website Footer">
+    <p>MSI Academic Advising | 
+      <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">
+        UMSI Academic Advising
+      </a>
+    </p>
+  </footer>
 </body>
 </html>
