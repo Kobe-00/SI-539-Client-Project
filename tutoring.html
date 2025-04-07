@@ -10,7 +10,9 @@
   <header>
     <a href="#main" class="skip-link">Skip to Main Content</a>
     <div class="site-branding">
-      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <a href="index.html">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+          </a>    
     </div>
     <nav class="main-nav" aria-label="Main Navigation">
       <ul>
@@ -27,38 +29,92 @@
 
     <section>
       <h2>Find the Right Tutoring Support</h2>
-      <p>Explore various tutoring options available at UMSI to help you succeed academically.</p>
+      <p>Explore various tutoring options available at UMSI to help you succeed academically. Whether you need help understanding a concept, revising a paper, or reviewing for an exam, there's a support service for you.</p>
     </section>
 
     <section class="grid-container">
       <article class="grid-item">
         <h3>Writing Center</h3>
-        <p>Get help with writing assignments, thesis projects, and research papers.</p>
+        <p>Get help with writing assignments, thesis projects, and research papers. The Writing Center offers personalized feedback on structure, clarity, grammar, and citations—whether you’re just starting a draft or polishing your final version.</p>
       </article>
 
       <article class="grid-item">
         <h3>Math & Stats Tutoring</h3>
-        <p>Access tutoring support for quantitative subjects such as statistics and data science.</p>
+        <p>Struggling with data analysis, algorithms, or statistical concepts? Connect with tutors who specialize in topics like data science, regression modeling, and probability. One-on-one and drop-in sessions available.</p>
       </article>
 
       <article class="grid-item">
         <h3>Peer Tutoring Programs</h3>
-        <p>Join group sessions hosted by fellow students trained to assist in challenging courses.</p>
+        <p>Join weekly study groups or schedule a peer-led tutoring session with students who have taken the same courses. Peer tutors understand the course expectations and can provide practical tips from experience.</p>
       </article>
 
       <article class="grid-item">
         <h3>TA Office Hours</h3>
-        <p>Connect with teaching assistants during scheduled hours for additional course help and clarification.</p>
+        <p>Each course typically offers scheduled office hours with Teaching Assistants (TAs). These sessions are perfect for asking clarifying questions, getting feedback on assignments, or reviewing for exams in a relaxed setting.</p>
       </article>
+    </section>
+
+    <section>
+      <h2>How to Access Tutoring</h2>
+      <ul>
+        <li><strong>Writing Center:</strong> <a href="https://lsa.umich.edu/sweetland">Book an appointment online via Sweetland</a></li>
+        <li><strong>Math/Stats Support:</strong> <a href="https://sites.lsa.umich.edu/math-learning-center/">View schedules and sign up</a></li>
+        <li><strong>Peer Tutoring:</strong> Reach out through UMSI’s academic support system or course Discord/Canvas</li>
+        <li><strong>TA Hours:</strong> Check your course syllabus or Canvas announcements</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tips for Academic Success</h2>
+      <ul>
+        <li>✅ Don’t wait until the last minute—seek help early and regularly</li>
+        <li>✅ Bring specific questions or a draft to tutoring sessions</li>
+        <li>✅ Attend office hours weekly to build rapport with instructors</li>
+        <li>✅ Form or join study groups with classmates</li>
+        <li>✅ Make use of planners or task apps to manage deadlines</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li><strong>Are tutoring services free?</strong> Yes, all listed services are free for U-M students.</li>
+        <li><strong>Do I need an appointment?</strong> Writing Center and some math sessions require appointments; others are drop-in.</li>
+        <li><strong>Can I use multiple tutoring services at once?</strong> Absolutely! Combine them based on your needs.</li>
+        <li><strong>Can international students use tutoring services?</strong> Yes, all are welcome. Writing tutors are also trained in ESL support.</li>
+      </ul>
     </section>
   </main>
 
   <footer aria-label="Website Footer">
-    <p>MSI Academic Advising | 
+    <p>MSI Academic Advising <span id="year"></span> | 
       <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">
         UMSI Academic Advising
       </a>
     </p>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </footer>
+
+  <!-- Go to Top Button -->
+  <button id="goTopBtn" aria-label="Go to top">↑ Top</button>
+
+  <script>
+    const goTopBtn = document.getElementById("goTopBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        goTopBtn.style.display = "block";
+      } else {
+        goTopBtn.style.display = "none";
+      }
+    };
+
+    goTopBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+  
 </body>
 </html>

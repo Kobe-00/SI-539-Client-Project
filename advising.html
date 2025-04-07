@@ -10,7 +10,9 @@
   <header>
     <a href="#main" class="skip-link">Skip to Main Content</a>
     <div class="site-branding">
-      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <a href="index.html">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+          </a>    
     </div>
     <nav class="main-nav" aria-label="Main Navigation">
       <ul>
@@ -27,38 +29,109 @@
 
     <section>
       <h2>Academic Advising at UMSI</h2>
-      <p>Meet with advisors to plan your coursework, discuss career goals, and get support throughout your program.</p>
+      <p>UMSI advisors are here to help you navigate your graduate experience. Whether you're deciding on a specialization, planning your schedule, exploring career options, or needing support, our advising resources can help guide you every step of the way.</p>
     </section>
 
     <section class="grid-container">
       <article class="grid-item">
         <h3>General Advising</h3>
-        <p>Schedule one-on-one meetings with academic advisors to discuss your program and personal goals.</p>
+        <p>Meet with academic advisors to plan your semester, discuss degree requirements, and explore specializations. Available in person or virtually by appointment.</p>
       </article>
 
       <article class="grid-item">
         <h3>Career Counseling</h3>
-        <p>Explore career paths and receive guidance on internships, networking, and the job search process.</p>
+        <p>Work one-on-one with career advisors to develop your career goals, improve your resume and cover letter, prepare for interviews, and explore internships or job opportunities.</p>
       </article>
 
       <article class="grid-item">
         <h3>Workshops and Info Sessions</h3>
-        <p>Attend events focused on course planning, career preparation, and grad school applications.</p>
+        <p>Attend events on topics like course registration, resume writing, career exploration, internship search, and graduate school prep. Check your email or advising calendar regularly.</p>
       </article>
 
       <article class="grid-item">
         <h3>Peer Advising</h3>
-        <p>Connect with experienced students who can offer advice on course selection and time management.</p>
+        <p>Connect with trained UMSI student peer advisors who offer advice on classes, student life, and navigating your first year. Peer advisors hold office hours throughout the week.</p>
       </article>
+    </section>
+
+    <section>
+      <h2>Advising Checklist</h2>
+      <ul>
+        <li>✅ Check your academic progress in Wolverine Access</li>
+        <li>✅ Prepare questions about courses, specializations, or requirements</li>
+        <li>✅ Bring your unofficial transcript or have it pulled up digitally</li>
+        <li>✅ Know your upcoming deadlines (add/drop, registration, etc.)</li>
+        <li>✅ Think about your career and long-term goals</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>When to Contact an Advisor</h2>
+      <ul>
+        <li><strong>Need help choosing classes?</strong> → General Advising</li>
+        <li><strong>Confused about your degree audit?</strong> → General Advising</li>
+        <li><strong>Looking for an internship?</strong> → Career Counseling</li>
+        <li><strong>Want to switch your specialization?</strong> → General or Peer Advising</li>
+        <li><strong>Feeling overwhelmed or uncertain?</strong> → Any advisor — we're here for you</li>
+      </ul>
+    </section>
+
+    <section>
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+          <li><strong>How do I schedule an advising appointment?</strong> Use the <a href="https://si-umich.12twenty.com/Login">Advising Scheduler</a> or email advising@umich.edu.</li>
+          <li><strong>How often should I meet with an advisor?</strong> We recommend at least once per semester to stay on track.</li>
+          <li><strong>Are advising meetings available virtually?</strong> Yes! You can choose between in-person or Zoom appointments.</li>
+          <li><strong>Can I talk to more than one type of advisor?</strong> Absolutely — you can meet with general, peer, or career advisors depending on your need.</li>
+        </ul>
+      </section>
+  
+      <section>
+        <h2>Plan Ahead and Stay Connected</h2>
+        <p>Advising appointments fill up quickly during registration season. Schedule early and stay up to date with UMSI advising newsletters and announcements.</p>
+        <p><a href="https://sites.google.com/umich.edu/msiacademicadvising/">Visit the UMSI Advising Portal</a> for appointment links, forms, and more resources.</p>
+      </section>  
+
+    <section>
+      <h2>Planning Tools & Links</h2>
+      <ul>
+        <li><a href="https://wolverineaccess.umich.edu/">Wolverine Access</a> – Your student portal for course registration, grades, and financial aid</li>
+        <li><a href="https://lsa.umich.edu/advising/degree-audit.html">Degree Audit Checklist</a> – Track your degree progress and requirements</li>
+        <li><a href="https://careercenter.umich.edu/">University Career Center</a> – Career exploration, resumes, job postings, and more</li>
+        <li><a href="https://maizepages.umich.edu/">Maize Pages</a> – Explore student orgs and co-curricular opportunities</li>
+      </ul>
     </section>
   </main>
 
   <footer aria-label="Website Footer">
-    <p>MSI Academic Advising | 
+    <p>MSI Academic Advising <span id="year"></span> |
       <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">
         UMSI Academic Advising
       </a>
     </p>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </footer>
+
+  <!-- Go to Top Button -->
+  <button id="goTopBtn" aria-label="Go to top">↑ Top</button>
+
+  <script>
+    const goTopBtn = document.getElementById("goTopBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        goTopBtn.style.display = "block";
+      } else {
+        goTopBtn.style.display = "none";
+      }
+    };
+
+    goTopBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+  
 </body>
 </html>

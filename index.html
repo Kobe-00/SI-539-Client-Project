@@ -10,7 +10,9 @@
   <header>
     <a href="#main" class="skip-link">Skip to Main Content</a>
     <div class="site-branding">
-      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+      <a href="index.html">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+      </a>
     </div>
     <nav class="main-nav" aria-label="Main Navigation">
       <ul>
@@ -30,11 +32,23 @@
       <p>Your Comprehensive Guide to Resources for Graduate School Success.</p>
       <p>This guide is set up to help you be successful inside and outside of the classroom:</p>
       <ul>
-        <li>Academic Resources</li>
-        <li>Physical Health</li>
-        <li>Mental Health</li>
+        <li>Advising Resources</li>
+        <li>Tutoring Resources</li>
+        <li>Study Spaces Resources</li>
         <li>Life Outside the Classroom</li>
         <li>Contact</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Getting Started at UMSI</h2>
+      <p>Starting grad school can be overwhelming. Here are a few ways to make your transition smoother:</p>
+      <ul>
+        <li>📘 Bookmark your course schedule and academic calendar</li>
+        <li>🤝 Introduce yourself to your advisor during the first two weeks</li>
+        <li>🏫 Explore study spots on campus and nearby coffee shops</li>
+        <li>🗓️ Attend at least one community-building or club event</li>
+        <li>💬 Join student Slack, Discord, or other chat groups to stay connected</li>
       </ul>
     </section>
 
@@ -51,20 +65,72 @@
       <article class="grid-item">
         <h3>Recreational Sports</h3>
         <figure>
-          <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
-          <figcaption>UMSI out in the fall!</figcaption>
+          <img src="images/rec.jpg" alt="University Recreational Center">
+          <figcaption>University Recreational Center</figcaption>
         </figure>
         <p>Participate in various fitness programs, sports clubs, and use gym facilities to stay active and healthy.</p>
       </article>
+
+      <article class="grid-item">
+        <h3>Mental Health & Wellbeing</h3>
+        <figure>
+          <img src="images/caps.jpg" alt="Counseling and Psychological Services office">
+          <figcaption>Counseling and Psychological Services (CAPS)</figcaption>
+        </figure>
+        <p>Connect with therapists, group counseling, wellness coaching, and crisis support. CAPS is here for your mental wellness.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Life Outside the Classroom</h2>
+      <p>Grad school isn’t just about academics. Make time for experiences that enrich your social, emotional, and creative sides:</p>
+      <ul>
+        <li>🎭 Attend music, film, and theater events at the Michigan League and Ann Arbor venues</li>
+        <li>🌍 Join cultural or interest-based student organizations on <a href="https://maizepages.umich.edu/">Maize Pages</a></li>
+        <li>🌲 Explore the Arboretum, Nichols Arboretum, and local hiking trails</li>
+        <li>☕ Study at independent coffee shops like Literati, RoosRoast, or Sweetwaters</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact & Support</h2>
+      <p>Need additional help or want to talk to someone directly? Reach out:</p>
+      <ul>
+        <li><strong>Academic Advising:</strong> <a href="mailto:advising@umich.edu">advising@umich.edu</a></li>
+        <li><strong>Wellbeing Resources:</strong> <a href="https://caps.umich.edu">caps.umich.edu</a></li>
+        <li><strong>General UMSI Info:</strong> <a href="https://www.si.umich.edu">si.umich.edu</a></li>
+      </ul>
     </section>
   </main>
 
   <footer aria-label="Website Footer">
-    <p>MSI Academic Advising | 
+    <p>MSI Academic Advising <span id="year"></span> | 
       <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">
         UMSI Academic Advising
       </a>
     </p>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </footer>
+
+  <!-- Go to Top Button -->
+  <button id="goTopBtn" aria-label="Go to top">↑ Top</button>
+
+  <script>
+    const goTopBtn = document.getElementById("goTopBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        goTopBtn.style.display = "block";
+      } else {
+        goTopBtn.style.display = "none";
+      }
+    };
+
+    goTopBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
