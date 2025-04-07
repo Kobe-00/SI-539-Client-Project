@@ -6,7 +6,7 @@ body {
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden; 
 }
 
 /* Header */
@@ -100,18 +100,23 @@ section {
 /* Main Content Padding */
 main {
     padding: 0 1.5rem;
-    margin: 20px;
+    margin: 20px 40px 20px 40px;
 }
 
 /* Grid Layout Fix */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    row-gap: 3rem;
-    column-gap: 1.5rem;
-    padding: 0 1rem;
-
-}
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      repeat(auto-fit, minmax(250px, 1fr))
+      minmax(1rem, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
 
 /* Grid Items */
 .grid-item {
@@ -125,7 +130,11 @@ main {
     height: 100%;
     transition: transform 0.3s ease;
     padding-bottom: 50px;
-    margin: auto;
+    width: 100%;      
+    max-width: 100%;  
+    box-sizing: border-box;
+    margin: 0;   
+
 }
 
 .grid-item:hover {
@@ -173,6 +182,30 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Responsive: 2+ columns */
+@media (min-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 2rem;
+    }
+  }
+  
+  .grid-item {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+  
+  .grid-item:hover {
+    transform: translateY(-5px);
+  }
+
 /* Tablet View */
 @media (min-width: 768px) {
     .main-nav ul {
@@ -216,7 +249,7 @@ footer a:hover {
         font-size: 1rem;
     }
 
-    /* 🔥 New enhancement: horizontal header layout on desktop */
+    /* New enhancement: horizontal header layout on desktop */
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -268,4 +301,3 @@ footer a:hover {
     background-color: #00274C;
     color:  #ffcb05;
   }
-  
