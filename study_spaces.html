@@ -9,11 +9,30 @@
 <body>
   <header>
     <a href="#main" class="skip-link">Skip to Main Content</a>
+
     <div class="site-branding">
-        <a href="index.html">
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-          </a>    
+      <a href="index.html">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+      </a>
     </div>
+
+    <!-- Hamburger for Mobile -->
+    <button id="hamburgerBtn" class="hamburger" aria-label="Open Menu">☰</button>
+
+    <!-- Mobile Nav Overlay -->
+    <div id="mobileNav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <button id="closeBtn" class="close-btn" aria-label="Close Menu">✕</button>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutoring.html">Tutoring</a></li>
+        <li><a href="advising.html">Advising Resources</a></li>
+        <li><a href="study_spaces.html" class="active">Study Spaces</a></li>
+      </ul>
+    </div>
+
+    <!-- Original nav for tablet/desktop -->
     <nav class="main-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -134,20 +153,20 @@
   </main>
 
   <footer aria-label="Website Footer">
-    <p>MSI Academic Advising <span id="year"></span> |
+    <p>© Donghwan Kim<span id="year"></span> | 
       <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">
         UMSI Academic Advising
       </a>
     </p>
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
   </footer>
 
-  <!-- Go to Top Button -->
   <button id="goTopBtn" aria-label="Go to top">↑ Top</button>
 
   <script>
+    // Year Javascript
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    
+    // Go to Top Button Javascript
     const goTopBtn = document.getElementById("goTopBtn");
 
     window.onscroll = function () {
@@ -160,6 +179,22 @@
 
     goTopBtn.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    
+    // Hamburger Menu Javascript
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeBtn = document.getElementById('closeBtn');
+
+    hamburgerBtn.addEventListener('click', () => {
+      mobileNav.classList.add('open');
+      hamburgerBtn.style.display = 'none'; // Hide ☰
+    });
+
+    closeBtn.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      hamburgerBtn.style.display = 'block'; // Show ☰ again
     });
   </script>
   
