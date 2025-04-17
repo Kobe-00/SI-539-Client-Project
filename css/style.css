@@ -7,10 +7,10 @@ body {
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
-  }
+}
   
-  /* Header */
-  header {
+/* Header */
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@ body {
     color: white;
     padding: 15px 20px;
     flex-wrap: wrap;
-  }
+}
   
   /* Logo Branding */
   .site-branding img {
